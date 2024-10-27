@@ -1,12 +1,10 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import requests
+from config import API_KEY
 
 app = Flask(__name__)
 CORS(app)
-
-# Your API key from OpenWeatherMap
-API_KEY = 'a68141d5fda273bad55c2fd0f2b982b0'  # Replace this with your actual key
 
 # Sample launch site coordinates for Kennedy Space Center and Cape Canaveral
 launch_sites = {
